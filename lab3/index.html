@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Card Form</title>
+    <style>
+        fieldset {
+            margin-bottom: 30px;
+            padding: 20px;
+            border: 2px solid #000;
+        }
+        legend {
+            font-weight: bold;
+            font-size: 1.2em;
+            padding: 0 10px;
+        }
+        .form-title {
+            font-weight: bold;
+            font-size: 1.4em;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Student card FORM</h1>
+    
+    <section>
+        <p class="form-title">Personal Information</p>
+        <fieldset>
+            <label>Full Name: <input type="text" placeholder="Enter your full name"></label><br>
+            <label>Email: <input type="email" placeholder="Enter your email"></label><br>
+            <label>Password: <input type="password" placeholder="Enter a password"></label><br>
+            <label>Age: <input type="number"></label><br>
+            <label>Date of Birth: <input type="date"></label><br>
+            
+            <p>Gender:</p>
+            <label><input type="radio" name="gender"> Male</label>
+            <label><input type="radio" name="gender"> Female</label>
+            <label><input type="radio" name="gender"> Other</label>
+            
+            <p>Languages Known:</p>
+            <label><input type="checkbox"> English</label>
+            <label><input type="checkbox"> Spanish</label>
+            <label><input type="checkbox"> French</label>
+            
+            <p>Country:</p>
+            <select>
+                <option>Select your country</option>
+            </select>
+        </fieldset>
+    </section>
+    
+    <section>
+        <p class="form-title">College Subjects</p>
+        <fieldset>
+            <p>Select your subjects:</p>
+            <select multiple>
+                <option>Mathematics</option>
+                <option>Computer Science</option>
+                <option>Physics</option>
+                <option>Chemistry</option>
+                <option>English</option>
+            </select>
+            <p>Rate your interest in Computer Science:</p>
+            <input type="range">
+        </fieldset>
+    </section>
+    
+    <section>
+        <p class="form-title">Skills Assessment</p>
+        <fieldset>
+            <p>Describe your skills:</p>
+            <textarea placeholder="List your skills here..."></textarea><br>
+            <label>Upload your resume: <input type="file"></label><br>
+            <label>Pick your favorite color: <input type="color"></label><br>
+            <label>Preferred study time: <input type="time"></label><br>
+            <input type="submit" value="Submit Survey">
+        </fieldset>
+    </section>
+    
+    <footer>
+        <p>&copy; Student card by {Владислав Яцинич}. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
