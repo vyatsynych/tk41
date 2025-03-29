@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота 9: CSS Media Queries з адаптивним меню</title>
+    <!-- Підключаємо зовнішній файл зі стилями -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Шапка сторінки з меню навігації -->
+    <header class="header">
+        <nav class="navbar">
+            <!-- Прихований чекбокс для керування станом меню -->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+            <!-- Іконка меню для мобільних пристроїв -->
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+            <!-- Список пунктів меню -->
+            <ul class="menu">
+                <li><a href="#">Головна</a></li>
+                <li><a href="#">Новини</a></li>
+                <li><a href="#">Про нас</a></li>
+                <li><a href="#">Контакти</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Головний контейнер, який містить основний контент та сайтбар -->
+    <div class="container">
+
+        <!-- Секція новин із сіткою -->
+        <main class="news-grid">
+            <!-- Для прикладу 12 новин (додамо більше статей) -->
+            <!-- Рядок 1, новини 1-6 -->
+            <article class="news-item">
+                <a href="#"><img src="placeholder.svg" alt="Новина фото"></a>
+                <a href="#">
+                    <h2>Заголовок новини 1</h2>
+                </a>
+                <p>Дата публікації: 2024-11-01</p>
+                <p>Лід тексту: Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </article>
+
+            <article class="news-item">
+                <a href="#"><img src="placeholder.svg" alt="Новина фото"></a>
+                <a href="#">
+                    <h2>Заголовок новини 2</h2>
+                </a>
+                <p>Дата публікації: 2024-11-02</p>
+                <p>Лід тексту: Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </article>
+
+            <article class="news-item">
+                <a href="#"><img src="placeholder.svg" alt="Новина фото"></a>
+                <a href="#">
+                    <h2>Заголовок новини 3</h2>
+                </a>
+                <p>Дата публікації: 2024-11-03</p>
+                <p>Лід тексту: Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </article>
+
+            <article class="news-item">
+                <a href="#"><img src="placeholder.svg" alt="Новина фото"></a>
+                <a href="#">
+                    <h2>Заголовок новини 4</h2>
+                </a>
+                <p>Дата публікації: 2024-11-04</p>
+                <p>Лід тексту: Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </article>
+
+            <article class="news-item">
+                <a href="#"><img src="placeholder.svg" alt="Новина фото"></a>
+                <a href="#">
+                    <h2>Заголовок новини 5</h2>
+                </a>
+                <p>Дата публікації: 2024-11-05</p>
+                <p>Лід тексту: Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </article>
+
+            <article class="news-item">
+                <a href="#"><img src="placeholder.svg" alt="Новина фото"></a>
+                <a href="#">
+                    <h2>Заголовок новини 6</h2>
+                </a>
+                <p>Дата публікації: 2024-11-06</p>
+                <p>Лід тексту: Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </article>
+
+            <!-- Рядок 2, новини 7-12 -->
+            <article class="news-item">
+                <a href="#"><img src="placeholder.svg" alt="Новина фото"></a>
+                <a href="#">
+                    <h2>Заголовок новини 7</h2>
+                </a>
+                <p>Дата публікації: 2024-11-07</p>
+                <p>Лід тексту: Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </article>
+
+            <article class="news-item">
+                <a href="#"><img src="placeholder.svg" alt="Новина фото"></a>
+                <a href="#">
+                    <h2>Заголовок новини 8</h2>
+                </a>
+                <p>Дата публікації: 2024-11-08</p>
+                <p>Лід тексту: Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </article>
+
+            <article class="news-item">
+                <a href="#"><img src="placeholder.svg" alt="Новина фото"></a>
+                <a href="#">
+                    <h2>Заголовок новини 9</h2>
+                </a>
+                <p>Дата публікації: 2024-11-09</p>
+                <p>Лід тексту: Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </article>
+
+            <article class="news-item">
+                <a href="#"><img src="placeholder.svg" alt="Новина фото"></a>
+                <a href="#">
+                    <h2>Заголовок новини 10</h2>
+                </a>
+                <p>Дата публікації: 2024-11-10</p>
+                <p>Лід тексту: Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </article>
+
+            <article class="news-item">
+                <a href="#"><img src="placeholder.svg" alt="Новина фото"></a>
+                <a href="#">
+                    <h2>Заголовок новини 11</h2>
+                </a>
+                <p>Дата публікації: 2024-11-11</p>
+                <p>Лід тексту: Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </article>
+
+            <article class="news-item">
+                <a href="#"><img src="placeholder.svg" alt="Новина фото"></a>
+                <a href="#">
+                    <h2>Заголовок новини 12</h2>
+                </a>
+                <p>Дата публікації: 2024-11-12</p>
+                <p>Лід тексту: Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </article>
+        </main>
+
+        <!-- Секція aside із рекламними блоками -->
+        <aside class="aside-ad">
+
+            <!-- Рядок із 3 блоками реклами -->
+            <div class="ad-item">
+                <a href="#"><img src="placeholder-ad.svg" alt="Pеклама 1"></a>
+            </div>
+
+            <!-- Додавання другого рекламного блоку -->
+            <div class="ad-item">
+                <a href="#"><img src="placeholder-ad.svg" alt="Реклама 2"></a>
+            </div>
+
+            <!-- Додавання третього рекламного блоку -->
+            <div class="ad-item">
+                <a href="#"><img src="placeholder-ad.svg" alt="Реклама 3"></a>
+            </div>
+        </aside>
+
+    </div>
+
+</body>
+</html>
